@@ -15,12 +15,14 @@ Verify JSON id proof using curl:
 ```
 curl 'http://localhost:8080' -X 'POST' --data-binary '{"proof": {"chainId": "2a02a0053e5a8cf73a56ba0fda11e4d92e0238a4a2aa74fccf46d5a910746840","scope": "w.local.gm","expiration": "2021-02-08T07:54:15","signer": {"actor": "x.gm","permission": "active"},"signature": "SIG_K1_KaQ2t5YVQ1Ynvy5Y9UVAvWy3V4N4xXomNGHEmSJx2xc3DLJeUZWYGWknDJwALD5ViuszfGrDeCNbCRH2ji1G3yGeX8g2FH"}}'
 ```
+<br>
 
 Verify EOSIO auth header proof using HTTPie:
 
 ```
 http post localhost:8080 Authorization:"EOSIO KgKgBT5ajPc6VroP2hHk2S4COKSiqnT8z0bVqRB0aEAAgGQgGkQj4CfuIGAAAAAAACAZ6AAAAACo7TIyACArMDogI4G3insybxF7TaCj7OaF1rNJ9IVIlM+IJwPEswfZo/HA9dFyQQslFXYPMJ5BOnblfFNfk6lE5cxduCRz"
 ```
+<br>
 
 ## Configuration
 
@@ -31,6 +33,7 @@ You can configure the service to verify multiple EOSIO chains, set the `CHAINS` 
 ```shell
 export CHAINS='[{"name":"BeefNet","node":"https://node.beef.net","id":"beefbeefbeefbeefbeefbeefbeefbeefbeefbeefbeefbeefbeefbeefbeefbeef"}]'
 ```
+<br>
 
 ## Run with docker
 
