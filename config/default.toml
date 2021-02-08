@@ -1,0 +1,22 @@
+# default configuration, override in config/local.toml or with env vars
+
+# application name used for logging and service namespace
+name = 'idproofer'
+
+# port to run http server on
+port = 8080
+
+# logging output
+[log]
+level = 'debug'
+out = 'stdout' # path or stdout/err
+
+# supported chains
+[[chain]]
+name = 'EOS'
+id = 'aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906'
+node = 'https://eos.greymass.com'
+[[chain]]
+name = 'Jungle 3'
+id = '2a02a0053e5a8cf73a56ba0fda11e4d92e0238a4a2aa74fccf46d5a910746840'
+node = 'https://jungle3.greymass.com'
